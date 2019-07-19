@@ -3,10 +3,9 @@
 Built With
 HTML, CSS, Javascript, Bootstrap.
 
-## Project
-A responsive portolio for some recent projects. 
+## Link
 
-https://szewah.github.io/portfoliotwo/
+https://szewah.github.io/szewahportfolio/
 
 ## Acknowledgement
 Thanks to the instructors and teaching assistants at Columbia Univeristy Coding Bootcamp.
