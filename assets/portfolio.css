@@ -42,13 +42,15 @@
 }
 
 #icon-div {
+    outline: none;
     margin: 40px auto;
     width: 40%;
     padding: 5px;
 }
 
 #icon-about {
-    border: transparent;
+    outline: none;
+    border: none;
     background-color: transparent;
     padding: 10px;
     /* transition: .5s transform ease-in-out; */
@@ -202,7 +204,7 @@
     top: 38px;
 }
 
-#bllearnmore {
+.bllearnmore {
     border-radius: 34px;
     color: purple;
     font-size: 18px;
@@ -215,7 +217,7 @@
     transition: 0.3s;
 }
 
-#bllearnmore:hover {
+.bllearnmore:hover {
     color: white;
     background-color: purple;
 }
@@ -237,7 +239,7 @@
 
 #contact-text {
     text-align: center;
-    font-weight: lighter;
+    font-weight: 200;
     margin-top: 30px;
 }
 
@@ -263,7 +265,7 @@ footer {
 }
 
 
-/* Responsive  */
+/* ////RESPONSIVE////  */
 
 
 /* laptop */

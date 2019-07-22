@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-
-    /*============SCROLLING=============*/
+    /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
     $('#icon-about').on('click', function(event) {
         event.preventDefault();
@@ -23,13 +22,10 @@ $(document).ready(function () {
             })
         }
     });
-
-
     /*============CLOSE DROP DOWN ON LINK CLICK=============*/
     $("a.nav-link").click(function() {
         $("#dropDown").dropdown("toggle");
     });
-
 });
 
 
