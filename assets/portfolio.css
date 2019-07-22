@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-.modal-dialog {
-    background: black;
-}
-
 .navbar {
     position: sticky;
     top: 0px;
@@ -24,65 +20,92 @@
     width: 100vw;
     background: pink;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 170px;
 }
 
-.intro {
+#intro-div h2 {
     font-size: 30px;
 }
 
-#icon-about {
-    display: block;
-    margin: auto !important;
+#intro-div h3 {
+    font-size: 20px;
 }
 
-#icon-about>#to-about-icon {
-    width: 80px;
-    height: 80px;
-    color: white;
+#arrow {
+    animation: blink 2s linear infinite;
 }
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#icon-div {
+    margin: 40px auto;
+    width: 40%;
+    padding: 5px;
+}
+
+#icon-about {
+    border: transparent;
+    background-color: transparent;
+    padding: 10px;
+    /* transition: .5s transform ease-in-out; */
+}
+
+#icon-about:hover {
+    /* border: 1px solid transparent; */
+    cursor: pointer;
+}
+
+#arrow:hover {
+    transform: scale(1.3);
+}
+
+
+/* ////ABOUT SECTION//// */
 
 #about {
-    height: 120vh;
+    height: 130vh;
     width: 100vw;
     background: purple;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 50px;
 }
 
 #about-myself-div {
-    width: 60%;
-    margin: 50px auto;
+    width: 80%;
+    margin: 20px auto;
 }
 
 #about-h3 {
     color: white;
+    font-size: 30px;
 }
 
 #about-myself-text {
     color: white;
-    line-height: 35px;
-    font-size: 20px;
+    line-height: 1.6em;
     font-weight: lighter;
-    letter-spacing: 1.5px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
-#skills-div {
-    padding: 2px;
-    justify-content: center;
+
+/* #skills-div1,
+#skills-div2 {
     width: 100%;
-}
+} */
 
 .skills-module {
-    margin-top: 30px;
-    width: 200px !important;
+    margin-top: 10px;
+    width: 160px !important;
 }
 
 .card-skills {
     margin-bottom: 10px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .skills-module>p {
@@ -90,15 +113,19 @@
     margin: auto;
     color: white;
     text-align: center;
+    font-size: 10px;
 }
 
 .skills-module>p>span {
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 15px;
 }
 
+
+/* /////PORTFOLIO SECTION///// */
+
 #portfolio {
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     background: #f1f1f1;
 }
@@ -106,25 +133,38 @@
 #portfolio-h3 {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 30px;
-    padding-top: 130px;
+    margin-bottom: 5px;
+    padding-top: 70px;
+    color: #444649;
 }
 
 #portfolio-div {
-    margin-top: 50px;
+    margin: 2px auto;
     padding: 2px;
     justify-content: center;
     width: 100%;
 }
 
+.d-flex {
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#github-logo.d-flex {
+    margin-bottom: 100px;
+}
+
+
+/* portfolio cards */
+
 .module {
     border-radius: 0 !important;
-    width: 300px;
+    width: 100%;
     position: relative;
 }
 
 .port-image {
-    height: 250px;
+    height: 100%;
 }
 
 .module:hover .overlay {
@@ -180,14 +220,8 @@
     background-color: purple;
 }
 
-#coding-languages {
-    margin-top: 80px;
-}
 
-svg {
-    width: 50px;
-    height: 50px;
-}
+/* ///////Contact//////// */
 
 #contact {
     height: 100vh;
@@ -216,11 +250,6 @@ footer {
     padding-top: 30px !important;
 }
 
-.d-flex {
-    justify-content: center;
-    margin-top: 20px;
-}
-
 .fab,
 .fas {
     color: purple;
@@ -233,101 +262,153 @@ footer {
     color: white;
 }
 
-@media only screen and (max-width: 1349px) {
-    #contact-container {
-        width: 45%;
-    }
-}
 
-@media only screen and (max-width: 1165px) {
-    #contact-container {
-        width: 50%;
-    }
-}
+/* Responsive  */
 
-@media only screen and (max-width: 990px) {
-    #contact-container {
-        width: 55%;
-    }
-}
 
-@media only screen and (max-width: 895px) {
-    #portfolio {
-        height: 120vh;
-    }
-    #contact-container {
-        width: 60%;
-    }
-}
+/* laptop */
 
-@media only screen and (max-width: 806px) {
-    #about {
-        height: calc(130vh);
-        padding-top: 110px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #about {
-        height: 110vh;
-        padding-top: 110px;
+@media only screen and (min-width: 1240px) {
+    #intro-div {
+        margin-top: 50px;
     }
     #about-myself-div {
-        width: 90%;
+        width: 60%;
+        margin-top: 100px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .skills-module {
+        width: 380px !important;
+    }
+    .card-skills {
+        width: 80px;
+        height: 80px;
+    }
+    .skills-module>p {
+        width: 100%;
+        font-size: 18px;
+    }
+    .skills-module>p>span {
+        font-weight: lighter;
+        font-size: 20px;
     }
     #portfolio {
-        height: 100vh;
-    }
-    #contact-container {
-        width: 69%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .intro {
-        font-size: 30px;
-    }
-    #portfolio {
-        height: calc(190vh);
-    }
-    #portfolio-h3 {
-        font-size: 30px;
-        padding-top: 100px;
-    }
-    #contact-container {
-        width: 80%;
-    }
-    #contact-h3 {
-        padding-top: 60px;
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #about {
         height: 160vh;
     }
-    #portfolio {
-        height: 150vh;
+    #portfolio-h3 {
+        padding-top: 100px;
     }
-    #contact {
-        height: calc(110vh);
+    #portfolio-div {
+        width: 100%;
     }
-    #about-myself-div {
-        width: 80%;
-        margin-bottom: 0;
-    }
-    #about-myself-text {
-        margin-bottom: 5px;
+    .module {
+        width: 30%;
     }
 }
 
-@media only screen and (max-width: 375px) {
-    #about {
-        height: 200vh;
+
+/* ipad pro */
+
+@media only screen and (max-width: 1024px) {
+    #intro-div {
+        margin-top: 200px;
+    }
+    #intro-div h2 {
+        font-size: 50px;
+    }
+    #intro-div h3 {
+        font-size: 40px;
+    }
+    #icon-div {
+        width: 18%;
     }
     #about-myself-div {
-        width: 90%;
-        font-size: 12px;
+        width: 65%;
+    }
+    #portfolio {
+        height: 101vh;
+    }
+    .module {
+        width: 40%;
+    }
+}
+
+
+/* ipad */
+
+@media only screen and (max-width: 768px) {
+    #intro-div {
+        margin-top: 200px;
+    }
+    #icon-div {
+        width: 20%;
+    }
+    #about-myself-div {
+        width: 80%;
+        margin: 100px auto;
+    }
+    #about-myself-text {
+        font-size: 18px;
+    }
+    .skills-module {
+        width: 280px !important;
+    }
+    .card-skills {
+        width: 80px;
+        height: 80px;
+    }
+    .skills-module>p {
+        width: 50%;
+        font-size: 16px;
+    }
+    .skills-module>p>span {
+        font-size: 20px;
+    }
+    #portfolio {
+        height: 136vh;
+    }
+    #portfolio-h3 {
+        padding-top: 120px;
+    }
+    .module {
+        width: 50%;
+    }
+    .port-image {
+        height: 350px;
+    }
+}
+
+
+/* mobile phone */
+
+@media only screen and (max-width: 414px) {
+    #intro-div {
+        margin-top: 30px;
+    }
+    #intro-div h2 {
+        font-size: 30px;
+    }
+    #intro-div h3 {
+        font-size: 26px;
+    }
+    #about {
+        height: 157vh;
+    }
+    .skills-module {
+        width: 180px !important;
+    }
+    #about-myself-text {
+        padding-bottom: 10px;
+    }
+    .card-skills {
+        width: 40px;
+        height: 40px;
+    }
+    #portfolio {
+        height: 360vh;
+    }
+    .module {
+        width: 100%;
     }
 }

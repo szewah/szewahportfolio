@@ -1,31 +1,37 @@
-/*============SCROLLING=============*/
-//scroll to the about section from top of page
-$('#icon-about').on('click', function() {
-    console.log('click');
-    //http://blog.jonathanargentiero.com/jquery-scrolltop-not-working-on-mobile-devices-iphone-ipad-android-phones/
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {           
-        window.scrollTo(200, 700) // first value for left offset, second value for top offset
-    }
-    else{
-    $('html').animate({ scrollTop: 800 }, 500);
-    console.log('clicked')
-    }
-});
+$(document).ready(function () {
 
 
-//scroll to sections
-//From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery
-$('a').on('click', function(event) {
-    if (this.hash !=="") {
+    /*============SCROLLING=============*/
+    //scroll to the about section from top of page
+    $('#icon-about').on('click', function(event) {
         event.preventDefault();
+        $('html').stop().animate(
+            {scrollTop: $('#about').position().top -20
+        }, 500, 'swing');
+    });
+
+    /*============SCROLL TO SECTIONS=============*/
+    //From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery
+    $('a').on('click', function(event) {
         var hash = this.hash;
-        $('html').animate({
-            scrollTop: $(hash).offset().top
-        }, 700, function() {
-            window.location.hash = hash;
-        })
-    }
+        if (hash !=="") {
+            event.preventDefault();
+            $('html').animate({
+                scrollTop: $(hash).offset().top
+            }, 700, function() {
+                window.location.hash = hash;
+            })
+        }
+    });
+
+
+    /*============CLOSE DROP DOWN ON LINK CLICK=============*/
+    $("a.nav-link").click(function() {
+        $("#dropDown").dropdown("toggle");
+    });
+
 });
+
 
 /*============FIREBASE CONTACT FORM=============*/
 // let database = firebase.database();
@@ -65,5 +71,4 @@ $('a').on('click', function(event) {
 //     var thankYoudiv = $(".modal-content");
 //     thankYoudiv.append(thankYoutext);
 // };
-
 
