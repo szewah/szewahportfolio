@@ -1,9 +1,14 @@
 $(document).ready(function () {
 
+    //====MOVING OBJECTS===//
+    // var span1 = $("#flying1");
+    // span1.style.marginRight = "1px";
+
+
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
-    $('#icon-about').on('touchstart', function(event) {
-        alert("touchstart works");
+    $('#icon-about').on('mousedown touchstart', function(event) {
+        // alert("touchstart works");
         event.stopPropagation()
         $('html').stop().animate(
             {scrollTop: $('#about').position().top -20

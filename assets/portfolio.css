@@ -16,11 +16,18 @@
 }
 
 #intro {
+    position: relative;
     height: 100vh;
     width: 100vw;
     background: pink;
     text-align: center;
     padding-top: 170px;
+}
+
+#flying1 {
+    position: relative;
+    top: -100px;
+    left: -650px;
 }
 
 #intro-div h2 {
@@ -42,6 +49,7 @@
 }
 
 #icon-div {
+    text-align: center;
     outline: none;
     margin: 40px auto;
     width: 40%;
@@ -53,16 +61,8 @@
     border: none;
     background-color: transparent;
     padding: 10px;
+    cursor: pointer
     /* transition: .5s transform ease-in-out; */
-}
-
-#icon-about:hover {
-    /* border: 1px solid transparent; */
-    /* cursor: pointer; */
-}
-
-#arrow:hover {
-    transform: scale(1.3);
 }
 
 
