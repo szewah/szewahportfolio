@@ -7,10 +7,10 @@ $(document).ready(function () {
 
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
-    $('#icon-about').bind("click touchstart", function(event) {
+    $('#icon-about').on("click touchstart", function(event) {
         // alert("touchstart works");
         event.stopPropagation()
-        $('html').stop().animate(
+        $('html, body').stop().animate(
             {scrollTop: $('#about').position().top -20
         }, 500, 'swing');
     });
