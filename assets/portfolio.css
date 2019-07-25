@@ -61,7 +61,8 @@
     border: none;
     background-color: transparent;
     padding: 10px;
-    cursor: pointer
+    cursor: pointer;
+    z-index: 99;
     /* transition: .5s transform ease-in-out; */
 }
 

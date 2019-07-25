@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
-    $('#icon-about').on("vclick", function(event) {
+    $('#icon-about').on("click", function(event) {
         // alert("touchstart works");
         event.stopPropagation()
         $('html').stop().animate(
