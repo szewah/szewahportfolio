@@ -136,7 +136,6 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 5px;
-    padding-top: 20px;
     color: #444649;
 }
 
@@ -149,7 +148,7 @@
 
 .d-flex {
     justify-content: center;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 #github-logo.d-flex {
@@ -232,7 +231,7 @@
 }
 
 #contact-h3 {
-    padding-top: 200px;
+    padding-top: 130px;
     font-size: 30px;
     text-align: center;
 }
@@ -302,7 +301,7 @@ footer {
         padding: 50px;
     }
     #portfolio-h3 {
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .module {
         width: 30%;
@@ -354,7 +353,7 @@ footer {
     }
     #about-myself-div {
         width: 80%;
-        margin: 100px auto;
+        margin: 50px auto;
     }
     #about-myself-text {
         font-size: 18px;
@@ -373,9 +372,9 @@ footer {
     .skills-module>p>span {
         font-size: 20px;
     }
-    #portfolio-h3 {
-        padding-top: 120px;
-    }
+    /* #portfolio-h3 {
+        padding-top: 80px;
+    } */
     .module {
         width: 50%;
     }
