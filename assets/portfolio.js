@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
-    $('#icon-about').on('click', function(event) {
+    $('#icon-about').on('touchstart click', function(event) {
         event.preventDefault();
         $('html').stop().animate(
             {scrollTop: $('#about').position().top -20
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     /*============SCROLL TO SECTIONS=============*/
     //From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery
-    $('a').on('touchstart click', function(event) {
+    $('a').on('click', function(event) {
         var hash = this.hash;
         if (hash !=="") {
             event.preventDefault();
