@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
-    $('#icon-about').on('touchstart click', function(event) {
+    $('#icon-about').on('click touchstart', function(event) {
         event.preventDefault();
         $('html').stop().animate(
             {scrollTop: $('#about').position().top -20
