@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     /*============SCROLL TO SECTIONS=============*/
     //From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery
-    $('a').on('click', function(event) {
+    $('a').on('touchstart click', function(event) {
         var hash = this.hash;
         if (hash !=="") {
             event.preventDefault();
