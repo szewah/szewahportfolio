@@ -1,8 +1,5 @@
 $(document).ready(function () {
-
-    //====MOVING OBJECTS===//
     
-
 
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
     //scroll to the about section from top of page
