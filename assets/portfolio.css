@@ -26,16 +26,62 @@
 
 #flying1 {
     position: relative;
-    top: -100px;
-    left: -650px;
+    display: inline-block;
+    top: -170px;
+    left: -550px;
+    animation: rotation 2s linear infinite;
+}
+
+#flying2 {
+    position: relative;
+    display: inline-block;
+    top: -170px;
+    left: -350px;
+    animation: rotation 2s linear infinite;
+}
+
+#flying3 {
+    position: relative;
+    display: inline-block;
+    top: -170px;
+    right: -290px;
+    animation: rotation 2s linear infinite;
+}
+
+#flying4 {
+    position: relative;
+    display: inline-block;
+    top: -170px;
+    right: -590px;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 #intro-div h2 {
     font-size: 30px;
+    animation: fadeIn 3s linear;
 }
 
 #intro-div h3 {
     font-size: 20px;
+    animation: fadeIn 2s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #arrow {
