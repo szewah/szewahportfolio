@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
     //====MOVING OBJECTS===//
-    // var span1 = $("#flying1");
-    // span1.style.marginRight = "1px";
+    
 
 
     /*============SCROLL TO ABOUT ON ARROW CLICK=============*/
