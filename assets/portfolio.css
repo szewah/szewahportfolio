@@ -230,32 +230,36 @@ img.card-skills {
 .text {
     color: white;
     font-size: 25px;
-    position: relative;
-    top: 10px;
+    /* position: relative; */
+    top: 5px;
     text-align: center;
 }
 
-.overlay>a {
+.overlaylinkContainer>a {
     text-decoration: none;
 }
 
-#blcode {
-    color: purple;
-    font-size: 18px;
-    top: 38px;
+.overlayContainer {
+    padding-top: 15px;
+}
+
+.overlayContainer>p {
+    font-size: 12px;
+    color: white;
+    text-align: center;
 }
 
 .bllearnmore {
+    font-size: 12px;
     border-radius: 34px;
     color: purple;
-    font-size: 12px;
-    top: 70px;
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
     padding: 5px 5px 5px 5px;
     border: 2px solid purple;
     transition: 0.3s;
+    font-size: 10px;
 }
 
 .bllearnmore:hover {
@@ -337,9 +341,14 @@ footer {
         width: 30%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+    .overlayContainer {
+        padding-top: 50px;
+    }
+    .overlayContainer>p {
+        font-size: 18px;
+    }
     .bllearnmore {
         font-size: 18px;
-        top: 100px;
     }
 }
 
